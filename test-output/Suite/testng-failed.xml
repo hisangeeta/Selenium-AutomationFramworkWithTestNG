@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.automation.utility.SalesforceListeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.automation.test.AutomationScripts">
+        <methods>
+          <include name="valid_login" invocation-numbers="0"/>
+          <include name="setUpBeforeMethod"/>
+          <include name="tearDownMethod"/>
+        </methods>
+      </class> <!-- com.automation.test.AutomationScripts -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
